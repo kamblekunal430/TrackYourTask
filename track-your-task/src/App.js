@@ -10,8 +10,10 @@ class App extends Component {
       <Router>
         <Navbar />
         <br />
-        <Route path="/" exact render={Todos} />
-        <Route path="/todos" render={Todos} />
+        <div className="container">
+          <Route path="/" exact component={Todos} />
+          <Route path="/todos" component={Todos} />
+        </div>
       </Router>
     );
   }
