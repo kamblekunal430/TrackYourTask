@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": 101,
+      "name": "meeting at 5 pm",
+      "status": "incomplete"
+    },
+    {
+      "id": 102,
+      "name": "training",
+      "status": "incomplete"
+    },
+    {
+      "id": 103,
+      "name": "work on project",
+      "status": "incomplete"
+    },
+    {
+      "name": "Meeting with shanu",
+      "status": "incomplete",
+      "id": 104
+    },
+    {
+      "name": "Meeting with abhishek at 4 pm",
+      "status": "incomplete",
+      "id": 105
+    },
+    {
+      "name": "Go for lunch at 1pm",
+      "status": "incomplete",
+      "id": 106
+    },
+    {
+      "name": "Kunal Manohar Kamble",
+      "status": "incomplete",
+      "id": 107
+    },
+    {
+      "name": "TCS CODEVITA",
+      "status": "incomplete",
+      "id": 108
+    }
+  ]
+}
