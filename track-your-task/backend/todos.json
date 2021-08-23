@@ -1,3 +1,14 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "name": "going to chandrapur tommorow",
+      "status": "incomplete",
+      "id": 1
+    },
+    {
+      "name": "Going to nagpur tommorow",
+      "status": "incomplete",
+      "id": 2
+    }
+  ]
 }

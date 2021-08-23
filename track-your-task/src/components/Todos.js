@@ -60,6 +60,10 @@ export class Todos extends Component {
                                             Done
                                         </button>
                                         &emsp;
+                                        <button className="btn btn-outline-primary">
+                                            Edit
+                                        </button>
+                                        &emsp;
                                         <button
                                             className="btn btn-outline-danger"
                                             onClick={this.deleteTodo.bind(
