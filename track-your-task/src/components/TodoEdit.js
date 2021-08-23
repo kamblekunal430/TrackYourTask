@@ -36,18 +36,22 @@ export class TodoEdit extends Component {
             status: this.state.status,
         };
 
-        axios
-            .put(
-                "http://localhost:8080/todos/" + this.props.match.params.id,
-                todo
-            )
-            .then((result) => {
-                //console.log("Todo updated");
-                this.props.history.push("/todos");
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        if (todo.name === "") {
+            alert("Todo cannot be empty");
+        } else {
+            axios
+                .put(
+                    "http://localhost:8080/todos/" + this.props.match.params.id,
+                    todo
+                )
+                .then((result) => {
+                    //console.log("Todo updated");
+                    this.props.history.push("/todos");
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        }
     };
 
     handleChange = (event) => {

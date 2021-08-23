@@ -16,14 +16,19 @@ export class TodoAdd extends Component {
             name: this.state.name,
             status: this.state.status,
         };
-        axios
-            .post("http://localhost:8080/todos", todo)
-            .then((result) => {
-                window.location.href = "/";
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        //console.log("in addtodo" + (todo.name);
+        if (todo.name == null) {
+            alert("Todo Cannot be Empty");
+        } else {
+            axios
+                .post("http://localhost:8080/todos", todo)
+                .then((result) => {
+                    window.location.href = "/";
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        }
     };
 
     handleChange = (event) => {
