@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export class Todos extends Component {
     constructor(props) {
@@ -24,16 +25,19 @@ export class Todos extends Component {
     }
 
     deleteTodo(id) {
-        axios
-            .delete("http://localhost:8080/todos/" + id)
-            .then(() => {
-                //alert("Task deleted");
-                //window.location='/todos'
-                this.componentDidMount();
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        let res = window.confirm("Confirm Delete");
+        if (res) {
+            axios
+                .delete("http://localhost:8080/todos/" + id)
+                .then(() => {
+                    //alert("Task deleted");
+                    //window.location='/todos'
+                    this.componentDidMount();
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        }
     }
 
     render() {
@@ -56,13 +60,20 @@ export class Todos extends Component {
                                     </li>
                                     &emsp;
                                     <div className="pt-1">
-                                        <button className="btn btn-outline-success">
+                                        <button
+                                            className="btn btn-outline-success"
+                                            onClick={this.markDone}
+                                        >
                                             Done
                                         </button>
                                         &emsp;
-                                        <button className="btn btn-outline-primary">
+                                        <Link
+                                            to={"/todo-edit/" + todo.id}
+                                            className="btn btn-outline-primary"
+                                            onClick={this.editTodo}
+                                        >
                                             Edit
-                                        </button>
+                                        </Link>
                                         &emsp;
                                         <button
                                             className="btn btn-outline-danger"
