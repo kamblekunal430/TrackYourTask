@@ -9,6 +9,7 @@ The app have functionalities such as
 
 
 Install dependencies:
+    
     npm install
     
 Install json-server
@@ -19,6 +20,7 @@ Instruction to run the todos.json file
 
 1. Navigate to folder "backend"
 2. Run the command
-    json-server todos.json --watch --port 8080
+   
+    "json-server todos.json --watch --port 8080"
     
  
