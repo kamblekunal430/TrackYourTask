@@ -1,19 +1,14 @@
 {
   "todos": [
     {
-      "name": "going to chandrapur tommorow",
-      "status": "incomplete",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Going to nagpur on 24",
+      "id": 3,
+      "name": "good morning kunal !!",
       "status": "incomplete"
     },
     {
-      "name": "today mern live class",
+      "name": "good night",
       "status": "incomplete",
-      "id": 3
+      "id": 4
     }
   ]
 }

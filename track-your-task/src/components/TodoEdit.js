@@ -42,7 +42,7 @@ export class TodoEdit extends Component {
                 todo
             )
             .then((result) => {
-                console.log("Todo updated");
+                //console.log("Todo updated");
                 this.props.history.push("/todos");
             })
             .catch((err) => {
@@ -70,21 +70,19 @@ export class TodoEdit extends Component {
                             type="text"
                             name="name"
                             className="form-control bg-light"
+                            placeholder="Add task here"
                             value={this.state.name || ""}
                             onChange={this.handleChange}
                         />
                         &emsp;
-                        <button type="submit" className="btn btn-primary">
+                        <button
+                            type="submit"
+                            className="btn btn-outline-primary"
+                        >
                             Update
                         </button>
                         &emsp;
-                        <input
-                            type="reset"
-                            value="Clear"
-                            className="btn btn-danger"
-                        />
-                        &emsp;
-                        <Link to={"/"} className="btn btn-secondary">
+                        <Link to={"/"} className="btn btn-outline-secondary">
                             Back
                         </Link>
                     </div>
