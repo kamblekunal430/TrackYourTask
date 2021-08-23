@@ -8,6 +8,13 @@ The app have functionalities such as
 -delete the to-dos.
 
 
+Install dependencies:
+    npm install
+    
+Install json-server
+
+    npm install json-server --global
+
 Instruction to run the todos.json file
 
 1. Navigate to folder "backend"
