@@ -68,9 +68,11 @@ export class Todos extends Component {
                                         </button>
                                         &emsp;
                                         <Link
-                                            to={"/todo-edit/" + todo.id}
+                                            to={
+                                                "/todo-edit/" +
+                                                this.state.todos[index].id
+                                            }
                                             className="btn btn-outline-primary"
-                                            onClick={this.editTodo}
                                         >
                                             Edit
                                         </Link>

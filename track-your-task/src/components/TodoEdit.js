@@ -21,7 +21,7 @@ export class TodoEdit extends Component {
                     name: result.data.name,
                     status: result.data.status,
                 });
-                console.log(result.data);
+                //console.log(result.data);
             })
             .catch((err) => {
                 console.log(err);
@@ -32,11 +32,9 @@ export class TodoEdit extends Component {
         event.preventDefault();
         const todo = {
             id: this.props.match.params.id,
-
             name: this.state.name,
             status: this.state.status,
         };
-        console.log(this.props.match.params.id);
 
         axios
             .put(

@@ -21,9 +21,7 @@ class App extends Component {
                         <TodoAdd />
                         <Todos />
                     </Route>
-                    <Route path="/todo-edit/:id">
-                        <TodoEdit />
-                    </Route>
+                    <Route path="/todo-edit/:id" component={TodoEdit} />
                 </div>
             </Router>
         );
