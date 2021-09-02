@@ -1,14 +1,14 @@
 {
   "todos": [
     {
-      "name": "Scrum meet at 10:45 am",
-      "status": "complete",
-      "id": 1
+      "id": 5,
+      "name": "going to nagpur tommorow",
+      "status": "complete"
     },
     {
-      "name": "going to chandrapur tommorow",
+      "name": "Attend the MERN training live class",
       "status": "incomplete",
-      "id": 5
+      "id": 6
     }
   ]
 }
